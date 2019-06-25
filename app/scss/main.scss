@@ -3,51 +3,52 @@
 @import "libs";
 
 ::placeholder {
-	color: #666;
+  color: #666;
 }
 
 ::selection {
-	background-color: $accent;
-	color: #fff;
+  background-color: $accent;
+  color: #fff;
 }
 
 body {
-	font-size: 16px;
-	min-width: 320px;
-	position: relative;
-	line-height: 1.65;
-	font-family: $default-font;
-	overflow-x: hidden;
-	color: $text;
-	input, textarea {
-		border: #666 1px solid;
-		outline: none;
-		&:focus:required:invalid {
-			border-color: red;
-		}
-		&:required:valid {
-			border-color: green;
-		}
-	}
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  font-family: $default-font;
+  overflow-x: hidden;
+  color: $text;
+  input,
+  textarea {
+    border: #666 1px solid;
+    outline: none;
+    &:focus:required:invalid {
+      border-color: red;
+    }
+    &:required:valid {
+      border-color: green;
+    }
+  }
 }
 
 .img-responsive {
-	display: block;
-	max-width: 100%;
-	height: auto;
-	&.img-width {
-		width: 100%;
-	}
+  display: block;
+  max-width: 100%;
+  height: auto;
+  &.img-width {
+    width: 100%;
+  }
 }
 
 .text-center {
-	text-align: center;
+  text-align: center;
 }
 
-b, strong {
-	font-weight: bold;
+b,
+strong {
+  font-weight: bold;
 }
-
 
 // menu
 #cssmenu,
@@ -80,7 +81,7 @@ b, strong {
 }
 #cssmenu {
   width: auto;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1;
   background: #ffffff;
 }
@@ -121,11 +122,11 @@ b, strong {
   font-size: 16px;
   text-decoration: none;
   color: #000000;
-  -webkit-transition: color .2s ease;
-  -moz-transition: color .2s ease;
-  -ms-transition: color .2s ease;
-  -o-transition: color .2s ease;
-  transition: color .2s ease;
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  -ms-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  transition: color 0.2s ease;
 }
 #cssmenu > ul > li:hover > a,
 #cssmenu > ul > li.active > a {
@@ -177,11 +178,11 @@ b, strong {
 }
 #cssmenu ul ul li {
   height: 0;
-  -webkit-transition: height .2s ease;
-  -moz-transition: height .2s ease;
-  -ms-transition: height .2s ease;
-  -o-transition: height .2s ease;
-  transition: height .2s ease;
+  -webkit-transition: height 0.2s ease;
+  -moz-transition: height 0.2s ease;
+  -ms-transition: height 0.2s ease;
+  -o-transition: height 0.2s ease;
+  transition: height 0.2s ease;
 }
 #cssmenu ul li:hover > ul > li {
   height: 32px;
@@ -193,11 +194,11 @@ b, strong {
   background: #333333;
   text-decoration: none;
   color: #dddddd;
-  -webkit-transition: color .2s ease;
-  -moz-transition: color .2s ease;
-  -ms-transition: color .2s ease;
-  -o-transition: color .2s ease;
-  transition: color .2s ease;
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  -ms-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  transition: color 0.2s ease;
 }
 #cssmenu ul ul li:hover > a,
 #cssmenu ul ul li a:hover {
@@ -234,7 +235,13 @@ b, strong {
 #cssmenu ul ul li.has-sub:hover > a::after {
   border-color: #ffffff;
 }
-@media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+@media all and (max-width: 768px),
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px),
+  only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px),
+  only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px),
+  only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px),
+  only screen and (min-resolution: 192dpi) and (max-width: 1024px),
+  only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
   #cssmenu {
     width: 100%;
   }
@@ -300,7 +307,7 @@ b, strong {
     text-transform: uppercase;
   }
   #cssmenu #menu-button::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 20px;
     right: 20px;
@@ -310,7 +317,7 @@ b, strong {
     background: #000000;
   }
   #cssmenu #menu-button::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 25px;
     right: 20px;
@@ -332,7 +339,7 @@ b, strong {
     cursor: pointer;
   }
   #cssmenu .submenu-button::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 21px;
     left: 26px;
@@ -343,7 +350,7 @@ b, strong {
     z-index: 99;
   }
   #cssmenu .submenu-button::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 21px;
     top: 26px;
@@ -358,28 +365,44 @@ b, strong {
   }
 }
 
-
-.header	{
-	&__btn {
-		display: flex;
-		padding: 16px 25px;
-		background: #8995AF;
-		opacity: .7;
-		text-decoration: none;
-		color: #1F242F;
-
-		&:hover {
-			text-decoration: none;
-		    color: #1F242F;
-		}
-
-		img {
-			margin-right: 10px;
-		}
-	}
+.btn-main {
+  background: #ec5aa1;
+  border-radius: 23.5px;
+  padding: 10px 24px;
+  white-space: nowrap;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
 }
 
+.header {
+  &__calc-btn {
+    float: right !important;
+    a {
+      display: flex;
+      padding: 16px 25px;
+      background: RGB(231, 234, 239);
+      text-decoration: none;
+      color: #1f242f;
 
+      &:hover {
+        text-decoration: none;
+        color: #1f242f;
+      }
 
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.slider-block {
+  height: 680px;
+  background: rgb(196, 196, 196);
+}
 
 @import "media"; // Always at the end
