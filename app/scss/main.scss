@@ -117,10 +117,9 @@ b, strong {
   text-align: right;
 }
 #cssmenu > ul > li > a {
-  padding: 20px;
-  font-size: 12px;
+  padding: 16px 20px;
+  font-size: 16px;
   text-decoration: none;
-  text-transform: uppercase;
   color: #000000;
   -webkit-transition: color .2s ease;
   -moz-transition: color .2s ease;
@@ -357,6 +356,27 @@ b, strong {
   #cssmenu .submenu-button.submenu-opened:after {
     display: none;
   }
+}
+
+
+.header	{
+	&__btn {
+		display: flex;
+		padding: 16px 25px;
+		background: #8995AF;
+		opacity: .7;
+		text-decoration: none;
+		color: #1F242F;
+
+		&:hover {
+			text-decoration: none;
+		    color: #1F242F;
+		}
+
+		img {
+			margin-right: 10px;
+		}
+	}
 }
 
 
