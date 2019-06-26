@@ -385,6 +385,37 @@ strong {
 }
 
 .header {
+  &__phone {
+    font-size: 20px;
+    line-height: 100%;
+	color: #fff;
+	padding-bottom: 8px;
+  }
+  &__hours {
+    font-size: 12px;
+    line-height: 100%;
+    color: #fff;
+  }
+  &__title {
+    padding: 76px 0 40px 0;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid#6E6E70;
+    span {
+      font-size: 24px;
+      line-height: 110%;
+      color: #ffffff;
+      margin-left: 20px;
+    }
+  }
+
+  &__desc {
+    color: #6e6e70;
+    font-size: 14px;
+    line-height: 120%;
+  }
   &__calc-btn {
     float: right !important;
     a {
@@ -409,58 +440,82 @@ strong {
 .slider-block {
   height: 680px;
   background: rgb(196, 196, 196);
+  &__menu {
+    padding-top: 29px;
+  }
 }
 
 .slider {
   height: 500px;
   background: linear-gradient(80.69deg, #f7cd9c 6.35%, rgba(180, 136, 247, 0) 94.3%);
   border-radius: 5px;
-  transform: translateY(26%);
   &__form {
     height: 134px;
-	background: #48cbf4;
-	border-radius: 0 0 5px 5px;
-	text-align: center;
+    background: #48cbf4;
+    border-radius: 0 0 5px 5px;
+    text-align: center;
   }
 
   &__wrapper {
-	  height: 74%;
+    height: 74%;
   }
 }
 .form-group {
-	display: inline-block;
-	display: inline-flex;
-	transform: translateY(-50%);
-	input {
-		height: 62px;
-		border: none;
-		padding: 12px 28px;
-		&:first-child {
-			border-radius: 5px 0 0 5px;
-			border-right: 1px solid #8995AF;
-		}
-		&::placeholder {
-			color:#8995AF;
-		}
-	}
-	button {
-		padding: 15px 48px;
-		background: #ec5aa1;
-		white-space: nowrap;
-		border: none;
-		color: #fff;
-		cursor: pointer;
-		border-radius: 0 5px 5px 0;
-		font-size: 20px;
-        line-height: 32px;
-		&:focus {
-		  outline: none;
-		}
-	}
+  display: inline-block;
+  display: inline-flex;
+  transform: translateY(-50%);
+  input {
+    height: 62px;
+    border: none;
+    padding: 12px 28px;
+    &:first-child {
+      border-radius: 5px 0 0 5px;
+      border-right: 1px solid #8995af;
+    }
+    &::placeholder {
+      color: #8995af;
+    }
+  }
+  button {
+    padding: 15px 48px;
+    background: #ec5aa1;
+    white-space: nowrap;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    font-size: 20px;
+    line-height: 32px;
+    &:focus {
+      outline: none;
+    }
+  }
 }
 
 .owl-carousel {
-	height: 100%;
+  height: 100%;
+}
+
+.menu-bottom {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  li {
+    a {
+      display: inline-block;
+      padding: 15px;
+      font-size: 16px;
+      line-height: 100%;
+      color: #ffffff;
+      white-space: nowrap;
+      &:hover {
+        text-decoration: none;
+        color: #ffffff;
+      }
+    }
+  }
 }
 
 @import "media"; // Always at the end
