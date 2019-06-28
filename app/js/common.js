@@ -5,7 +5,9 @@ $(function() {
 		loop:true,
 		margin:10,
 		nav:true,
-		items: 1
+		dots: true,
+		items: 1,
+		navText: ["<img src='img/arrow-left.svg'>", "<img src='img/arrow-right.svg'>"]
 	})
 
 

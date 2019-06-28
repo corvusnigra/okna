@@ -1,4 +1,6 @@
 @import "_mixins/font-face";
 
-@include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
-@include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
+@include font-face("raleway-regular", "../fonts/Raleway/Raleway-Regular");
+@include font-face("raleway-bold", "../fonts/Raleway/Raleway-Bold", bold);
+@include font-face("raleway-bold", "../fonts/Raleway/Raleway-SemiBold");
+@include font-face("montserrat", "../fonts/Montserrat/Montserrat-ExtraBold", bold);
