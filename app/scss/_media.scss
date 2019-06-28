@@ -8,9 +8,17 @@
 
 // ≥992px
 @include media-breakpoint-down(md) {
-    .form-group {
-        width: 80%;
+  .owl-carousel {
+    h4 {
+      font-size: 24px !important;
+      white-space: inherit !important;
+      line-height: inherit !important;
+      text-align: center;
     }
+  }
+  .form-group {
+    width: 80%;
+  }
   .header__title {
     font-size: 24px;
     line-height: 32px;
@@ -29,10 +37,10 @@
     position: relative;
     padding: 16px 0;
     .btn-burger {
-        cursor: pointer;
+      cursor: pointer;
     }
     &__logo {
-        display: flex;
+      display: flex;
       img {
         margin-right: 17px;
       }
@@ -53,16 +61,15 @@
 
 // ≥768px
 @include media-breakpoint-down(sm) {
-    .form-group {
-       input {
-        border-radius: 5px !important;
-        margin-bottom: 16px;
-       }
-       button {
-        border-radius: 5px;
-       }
+  .form-group {
+    input {
+      border-radius: 5px !important;
+      margin-bottom: 16px;
     }
-
+    button {
+      border-radius: 5px;
+    }
+  }
 }
 
 // ≥576px
@@ -81,9 +88,9 @@
 
 // ≤992px
 @include media-breakpoint-up(lg) {
-    .mobile-menu__items {
-        display: none !important;
-    }
+  .mobile-menu__items {
+    display: none !important;
+  }
 }
 
 // ≤1200px
