@@ -426,10 +426,10 @@ h4 {
 
 .advantages {
   padding: 160px 0 48px 0;
-  border-bottom: 1px solid rgba(137, 149, 175, .2);
+  border-bottom: 1px solid rgba(137, 149, 175, 0.2);
   &__item {
-	display: flex;
-	align-items: center;
+    display: flex;
+    align-items: center;
     img {
       margin-right: 17px;
     }
@@ -437,6 +437,56 @@ h4 {
       font-size: 16px;
       line-height: 24px;
       color: #1f242f;
+    }
+  }
+}
+
+.tabs-product {
+  padding: 86px 0 0 0;
+
+  .tab-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 54px;
+  }
+  .tab-title li {
+    cursor: pointer;
+    position: relative;
+    font-family: "montserrat";
+    font-size: 32px;
+    line-height: 39px;
+    color: #8995af;
+  }
+  .tab-title li:hover {
+  }
+  .tab-title li.active {
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    color: #1f242f;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      background: #8a4ae7;
+      bottom: -8px;
+      left: 0;
+    }
+  }
+  .tab-content {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    li {
+      display: none;
+      text-align: center;
+      padding: 5px;
+      margin: 10px;
     }
   }
 }
