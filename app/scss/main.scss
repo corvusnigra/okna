@@ -430,6 +430,7 @@ h4 {
     float: right !important;
     a {
       display: flex;
+      align-items: center;
       padding: 16px 25px;
       background: RGB(231, 234, 239);
       text-decoration: none;
@@ -640,13 +641,103 @@ h4 {
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
-  font-family: 'montserrat';
+  font-family: "montserrat";
   font-size: 24px;
   line-height: 32px;
   padding: 5px 15px;
-  background: #48CBF4;
+  background: #48cbf4;
   border-radius: 6px;
   color: #fff;
+}
+
+.top-menu {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    li {
+      &.active {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          top: -15px;
+          height: 3px;
+          background: #48cbf4;
+        }
+      }
+      a {
+        font-family: "raleway-semi-bold";
+        font-size: 16px;
+        line-height: 100%;
+        color: #1f242f;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.wrapper-mobile-menu {
+  display: none;
+}
+
+.mobile-menu {
+	&__calc-btn {
+		background: rgba(137, 149, 175, .2);
+		a {
+			img {
+				margin-right: 32px;
+			}
+		}
+	}
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .phone {
+      font-family: 'montserrat';
+      font-size: 20px;
+      line-height: 100%;
+	  color: #1f242f;
+	  padding: 40px 0 8px 0;
+	}
+	button {
+		margin: 22px 0 32px 0;
+		
+	}
+  }
+  &__items {
+    position: relative;
+	background: #fff;
+	display: none;
+
+    .close-icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      li {
+        padding: 16px 24px;
+        border-bottom: 1px solid rgba(137, 149, 175, 0.2);
+        a {
+          font-size: 16px;
+          color: #1f242f;
+        }
+      }
+    }
+  }
 }
 
 @import "media"; // Always at the end
