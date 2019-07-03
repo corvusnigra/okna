@@ -19,13 +19,16 @@ body {
   font-family: $default-font;
   overflow-x: hidden;
   color: $text;
+
   input,
   textarea {
     border: #666 1px solid;
     outline: none;
+
     &:focus:required:invalid {
       border-color: red;
     }
+
     &:required:valid {
       border-color: green;
     }
@@ -36,6 +39,7 @@ body {
   display: block;
   max-width: 100%;
   height: auto;
+
   &.img-width {
     width: 100%;
   }
@@ -72,9 +76,11 @@ h4 {
   border: none;
   color: #fff;
   cursor: pointer;
+
   &:focus {
     outline: none;
   }
+
   &:hover {
     background: #6e2dcd;
     transition: 0.3s;
@@ -89,19 +95,23 @@ h4 {
     color: #fff;
     padding-bottom: 8px;
   }
+
   &__hours {
     font-size: 12px;
     line-height: 100%;
     color: #fff;
   }
+
   &__title {
     padding: 49px 0 73px 0;
     position: relative;
   }
+
   &__logo {
     display: flex;
     align-items: center;
     border-right: 1px solid rgba(255, 255, 255, 0.3);
+
     span {
       font-size: 24px;
       line-height: 110%;
@@ -115,8 +125,10 @@ h4 {
     font-size: 14px;
     line-height: 120%;
   }
+
   &__calc-btn {
     float: right !important;
+
     a {
       display: flex;
       align-items: center;
@@ -140,6 +152,7 @@ h4 {
 .slider-block {
   height: 680px;
   position: relative;
+
   &::before {
     content: "";
     width: 100%;
@@ -148,6 +161,7 @@ h4 {
     background: #000000;
     opacity: 0.6;
   }
+
   &__menu {
     padding: 26px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -157,6 +171,7 @@ h4 {
 .slider {
   height: 500px;
   border-radius: 5px;
+
   &__form {
     height: 134px;
     background: #48cbf4;
@@ -174,6 +189,7 @@ h4 {
   font-size: 14px;
   line-height: 100%;
   color: rgba(31, 36, 47, 0.5);
+
   span {
     color: #fff;
     margin-left: 8px;
@@ -186,18 +202,22 @@ h4 {
   transform: translateY(-50%);
   position: relative;
   z-index: 1;
+
   input {
     height: 62px;
     border: none;
     padding: 12px 28px;
+
     &:first-child {
       border-radius: 5px 0 0 5px;
       border-right: 1px solid rgba(137, 149, 175, 0.4);
     }
+
     &::placeholder {
       color: #8995af;
     }
   }
+
   button {
     padding: 15px 48px;
     background: #8a4ae7;
@@ -208,9 +228,11 @@ h4 {
     border-radius: 0 5px 5px 0;
     font-size: 20px;
     line-height: 32px;
+
     &:focus {
       outline: none;
     }
+
     &:hover {
       background: #6e2dcd;
       transition: 0.3s;
@@ -226,9 +248,11 @@ h4 {
     position: relative;
     height: 100%;
     border-radius: 15px 15px 0 0;
+
     .owl-item {
       height: 100%;
       border-radius: 15px 15px 0 0;
+
       .item {
         height: 100%;
         border-radius: 15px 15px 0 0;
@@ -242,6 +266,7 @@ h4 {
           border-radius: 15px 15px 0 0;
           background: linear-gradient(80.69deg, #f7cd9c 6.35%, rgba(180, 136, 247, 0) 94.3%);
         }
+
         h4 {
           position: absolute;
           top: 50%;
@@ -261,6 +286,7 @@ h4 {
       }
     }
   }
+
   .owl-nav {
     position: absolute;
     top: 54%;
@@ -292,6 +318,7 @@ h4 {
       background: #fff;
       margin-right: 40px;
       border: 4px solid transparent;
+
       &.active {
         width: 10px;
         height: 10px;
@@ -320,6 +347,7 @@ h4 {
       line-height: 100%;
       color: #ffffff;
       white-space: nowrap;
+
       &:hover {
         text-decoration: none;
         color: #ffffff;
@@ -351,9 +379,11 @@ h4 {
     padding: 0;
     margin: 0;
     list-style-type: none;
+
     li {
       &.active {
         position: relative;
+
         &::before {
           content: "";
           position: absolute;
@@ -363,11 +393,13 @@ h4 {
           background: #48cbf4;
         }
       }
+
       a {
         font-family: "raleway-semi-bold";
         font-size: 16px;
         line-height: 100%;
         color: #1f242f;
+
         &:hover {
           text-decoration: none;
         }
@@ -383,12 +415,14 @@ h4 {
 .mobile-menu {
   &__calc-btn {
     background: rgba(137, 149, 175, 0.2);
+
     a {
       img {
         margin-right: 32px;
       }
     }
   }
+
   &__header {
     display: flex;
     flex-direction: column;
@@ -401,10 +435,12 @@ h4 {
       color: #1f242f;
       padding: 40px 0 8px 0;
     }
+
     button {
       margin: 22px 0 32px 0;
     }
   }
+
   &__items {
     position: relative;
     background: #fff;
@@ -420,9 +456,11 @@ h4 {
       margin: 0;
       padding: 0;
       list-style-type: none;
+
       li {
         padding: 16px 24px;
         border-bottom: 1px solid rgba(137, 149, 175, 0.2);
+
         a {
           font-size: 16px;
           color: #1f242f;
@@ -435,12 +473,15 @@ h4 {
 .advantages {
   padding: 160px 0 48px 0;
   border-bottom: 1px solid rgba(137, 149, 175, 0.2);
+
   &__item {
     display: flex;
     align-items: center;
+
     img {
       margin-right: 17px;
     }
+
     span {
       font-size: 16px;
       line-height: 24px;
@@ -461,6 +502,7 @@ h4 {
     list-style-type: none;
     margin-bottom: 54px;
   }
+
   .tab-title li {
     cursor: pointer;
     position: relative;
@@ -469,13 +511,15 @@ h4 {
     line-height: 39px;
     color: #8995af;
   }
-  .tab-title li:hover {
-  }
+
+  .tab-title li:hover {}
+
   .tab-title li.active {
     font-size: 40px;
     line-height: 49px;
     text-align: center;
     color: #1f242f;
+
     &::after {
       content: "";
       position: absolute;
@@ -486,10 +530,12 @@ h4 {
       left: 0;
     }
   }
+
   .tab-content {
     margin: 0;
     padding: 0;
     list-style-type: none;
+
     li {
       display: none;
       text-align: center;
@@ -507,6 +553,7 @@ h4 {
   align-items: center;
   position: relative;
   overflow: hidden;
+
   &__img {
     max-width: 200px;
     margin-bottom: 24px;
@@ -522,38 +569,41 @@ h4 {
 
   &__price {
     font-family: 'montserrat';
-font-weight: 800;
-font-size: 24px;
-line-height: 29px;
-color: #1F242F;
-padding-bottom: 24px;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1F242F;
+    padding-bottom: 24px;
   }
 
   &__desc {
-font-size: 16px;
-line-height: 24px;
-color: #8995AF;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8995AF;
   }
 
   &:hover {
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
+
     .product-item__link {
       opacity: 1;
       transition: .3s;
     }
   }
+
   &__link {
     display: flex;
     opacity: 0;
 
-span {
-  font-size: 16px;
-  color: #48CBF4;
-  position: absolute;
-  right: 100px;
-  bottom: 16px;
-}
+    span {
+      font-size: 16px;
+      color: #48CBF4;
+      position: absolute;
+      right: 100px;
+      bottom: 16px;
+    }
+
     a {
       width: 137px;
       height: 137px;
@@ -568,6 +618,155 @@ span {
         position: absolute;
         left: 39px;
       }
+    }
+  }
+}
+
+.submit {
+  padding: 40px 0 80px 0;
+  &__wrapper {
+    border: 10px solid rgba(137, 149, 175, .2);
+    padding: 80px 0;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #1F242F;
+    padding-bottom: 32px;
+  }
+
+  &__tel {
+    font-family: 'montserrat';
+    font-size: 40px;
+    line-height: 100%;
+    text-align: center;
+    color: #1F242F;
+    padding-bottom: 32px;
+  }
+
+  &__desc {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #1F242F;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 48px;
+  }
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 48px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    background: #8A4AE7;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__btn-wrapper {
+   
+  }
+}
+
+.footer {
+  &__menu {
+    background: rgba(137, 149, 175, .1);
+    padding: 48px 0 64px 0;
+  }
+
+  &__bottom {
+    padding: 40px 0;
+
+    .social {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 16px;
+
+      img {
+        cursor: pointer;
+        margin-right: 16px;
+      }
+    }
+
+    .adres {
+      font-size: 14px;
+      line-height: 20px;
+      text-align: right;
+    }
+
+    .tel {
+      font-family: 'montserrat';
+      font-size: 20px;
+      line-height: 100%;
+      padding-bottom: 8px;
+      text-align: center;
+    }
+
+    .day {
+      font-size: 12px;
+      line-height: 100%;
+      color: #8995AF;
+      text-align: center;
+    }
+
+    .company-info {
+      font-size: 14px;
+      line-height: 20px;
+      color: #8995AF;
+      padding-bottom: 12px;
+    }
+
+    .promotion {
+      font-size: 14px;
+      line-height: 20px;
+      color: #1F242F;
+
+      a {
+        color: #1F242F;
+      }
+    }
+
+    .confidentiality {
+      padding-bottom: 12px;
+
+      a {
+        font-size: 14px;
+        line-height: 20px;
+        color: #48CBF4;
+        text-decoration: none;
+      }
+
+    }
+  }
+}
+
+.footer-menu {
+  &__title {
+    font-family: 'raleway-bold';
+    font-size: 18px;
+    line-height: 32px;
+    color: #1F242F;
+    padding-bottom: 24px;
+  }
+
+  &__menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li>a {
+      font-size: 16px;
+      line-height: 32px;
+      color: #1F242F;
     }
   }
 }

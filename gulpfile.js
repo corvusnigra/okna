@@ -24,9 +24,10 @@ gulp.task('browser-sync', function() {
 			baseDir: 'app'
 		},
 		notify: false,
-		open: false
+		open: false,
 		// online: false, // Work Offline Without Internet Connection
-		// tunnel: true, tunnel: "projectname", // Demonstration page: http://projectname.localtunnel.me
+		tunnel: true, 
+		tunnel: "okna-garant", // Demonstration page: http://projectname.localtunnel.me
 	})
 });
 
@@ -65,8 +66,8 @@ gulp.task('rsync', function() {
 	return gulp.src('app/**')
 	.pipe(rsync({
 		root: 'app/',
-		hostname: 'username@yousite.com',
-		destination: 'yousite/public_html/',
+		hostname: 'http://avdanij1.beget.tech/',
+		destination: 'okna-garant/public_html/assets',
 		// include: ['*.htaccess'], // Includes files to deploy
 		exclude: ['**/Thumbs.db', '**/*.DS_Store'], // Excludes files from deploy
 		recursive: true,
