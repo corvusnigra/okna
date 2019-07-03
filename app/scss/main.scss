@@ -624,6 +624,7 @@ h4 {
 
 .submit {
   padding: 40px 0 80px 0;
+
   &__wrapper {
     border: 10px solid rgba(137, 149, 175, .2);
     padding: 80px 0;
@@ -668,13 +669,13 @@ h4 {
     text-align: center;
     background: #8A4AE7;
     cursor: pointer;
+
     &:focus {
       outline: none;
     }
   }
-  &__btn-wrapper {
-   
-  }
+
+  &__btn-wrapper {}
 }
 
 .footer {
@@ -768,6 +769,25 @@ h4 {
       line-height: 32px;
       color: #1F242F;
     }
+  }
+}
+
+.categories {
+  padding-bottom: 80px;
+  border-bottom: 1px solid rgba(137, 149, 175, .2);
+
+  &__item {
+    padding: 30px;
+    height: 280px;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-family: 'montserrat';
+    font-size: 32px;
+    line-height: 40px;
+    color: #FFFFFF;
+    width: 50%;
   }
 }
 
