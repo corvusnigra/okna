@@ -35,8 +35,18 @@
 			<nav class="top-menu">
 				<ul>
 					<li><a href='#'>Окна и двери</a></li>
-					<li class='active'><a href='#'>Балконы</a></li>
-					<li><a href='#'>Комплектующие</a></li>
+					<li class='active'><a href='#'>Балконы</a>
+						<ul class="submenu">
+							<li><a href="#">Сроки производства</a></li>
+							<li><a href="#">Сертификаты</a></li>
+						</ul>
+					</li>
+					<li><a href='#'>Комплектующие</a>
+						<ul class="submenu">
+								<li><a href="#">Сроки производства</a></li>
+								<li><a href="#">Сертификаты</a></li>
+							</ul>
+					</li>
 					<li><a href='#'>Услуги и сервис</a></li>
 					<li><a href='#'>Акции и цены</a></li>
 					<li><a href='#'>Наши работы</a></li>
@@ -59,7 +69,12 @@
 					</div>
 					<div class="col d-flex align-items-center">
 						<ul class="menu-bottom">
-							<li><a href="#">О нас</a></li>
+							<li><a href="#">О нас</a>
+								<ul class="submenu">
+									<li><a href="#">Сроки производства</a></li>
+									<li><a href="#">Сертификаты</a></li>
+								</ul>
+							</li>
 							<li><a href="#">Контакты</a></li>
 							<li><a href="#">Отзывы</a></li>
 						</ul>
@@ -335,12 +350,14 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<div class="categories__item"
-						style="background:url(img/window-2.png) bottom right no-repeat, linear-gradient(128.17deg, #48CBF4 0%, #7473FD 98.91%), #48CBF4">
-						<div class="categories__title">
-							Окна под ключ
+					<a href="">
+							<div class="categories__item"
+							style="background:url(img/window-2.png) bottom right no-repeat, linear-gradient(128.17deg, #48CBF4 0%, #7473FD 98.91%), #48CBF4">
+							<div class="categories__title">
+								Окна под ключ
+							</div>
 						</div>
-					</div>
+					</a>
 				</div>
 				<div class="col-md-6">
 					<div class="categories__item"
@@ -489,7 +506,7 @@
 		<div class="table-slider-component">
 			<div class="container">
 				<div class="row no-gutters">
-					<div class="col-md-3">
+					<div class="col-6 col-md-3">
 						<div class="options-desc">
 							<div class="options-desc__option gray">
 								Светопропускание
@@ -509,7 +526,7 @@
 
 						</div>
 					</div>
-					<div class="col-md-9">
+					<div class="col-6 col-md-9">
 						<div class="product-carousel owl-carousel">
 							<div class="item product-carousel-item">
 								<div class="product-carousel-item__image">
@@ -773,7 +790,7 @@
 
 
 	<footer class="footer">
-		<div class="footer__menu">
+		<div class="footer__menu d-none d-sm-block">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3">
@@ -836,7 +853,7 @@
 							Разработка и продвижение by <a href="#">Goodfellaz.ru</a>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 d-none d-sm-block">
 						<div class="tel">
 							+7 978 951 56 32
 						</div>
@@ -845,16 +862,16 @@
 						</div>
 					</div>
 					<div class="col-md-3">
-						<div class="adres">
+						<div class="adres d-none d-sm-block">
 							Симферополь, ул. Киевская, 25
 						</div>
-						<div class="adres">
+						<div class="adres d-none d-sm-block">
 							Евпатория, ул. Ялтинская, 25
 						</div>
 						<div class="social">
-							<img src="img/facebook-icon.svg" alt="">
-							<img src="img/instagram-icon.svg" alt="">
-							<img src="img/vk-icon.svg" alt="">
+							<a href="https://www.facebook.com/" target="_blank"><img src="img/facebook-icon.svg"></a> 
+							<a href="https://www.instagram.com/" target="_blank"><img src="img/instagram-icon.svg"></a>
+							<a href="https://vk.com/" target="_blank"><img src="img/vk-icon.svg"></a>
 						</div>
 					</div>
 				</div>
@@ -862,7 +879,7 @@
 		</div>
 
 	</footer>
-	<div id="hidden">dfsfdsfsdf</div>
+	<div id="hidden" style="display: none">dfsfdsfsdf</div>
 
 	<script src="js/scripts.min.js"></script>
 	<link rel='stylesheet prefetch' href='libs/fancybox/jquery.fancybox.min.css'>

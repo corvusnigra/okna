@@ -3,6 +3,7 @@ $(function () {
 });
 
 $(function () {
+
 	$('.slider__wrapper .owl-carousel').owlCarousel({
 		loop: true,
 		margin: 10,
@@ -19,7 +20,8 @@ $(function () {
 		items: 4,
 		responsive: {
 			0: {
-				items: 1
+				items: 1,
+				nav: false
 			},
 			600: {
 				items: 2,
@@ -41,7 +43,8 @@ $(function () {
 		navText: ["<img src='img/arrow-left.svg'>", "<img src='img/arrow-right.svg'>"],
 		responsive: {
 			0: {
-				items: 1
+				items: 1,
+				nav: false
 			},
 			600: {
 				items: 2,
@@ -62,7 +65,8 @@ $(function () {
 		navText: ["<img src='img/arrow-left.svg'>", "<img src='img/arrow-right.svg'>"],
 		responsive: {
 			0: {
-				items: 1
+				items: 1,
+				nav: false
 			},
 			600: {
 				items: 2,

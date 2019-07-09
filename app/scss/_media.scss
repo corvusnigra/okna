@@ -16,8 +16,26 @@
       text-align: center;
     }
   }
-  .form-group {
-    width: 80%;
+  .slider {
+    .form-group {
+      width: 80%;
+    }
+  }
+
+  .free-call {
+    .form__text {
+      top: 65px;
+    }
+    .form-group {
+      .row {
+        box-shadow:none;
+      }
+     
+      input {
+        border-right: none;
+        box-shadow: 0 10px 40px rgba(0,0,0,.1);
+      }
+    }
   }
   .header__title {
     font-size: 24px;
@@ -61,6 +79,25 @@
 
 // ≥768px
 @include media-breakpoint-down(sm) {
+  
+  .slider__form {
+    height: 42%;
+  }
+  .form__text {
+    position: absolute;
+    top: 138px;
+}
+  .submit__title {
+    font-size: 16px;
+  }
+  .submit__tel {
+    font-size: 20px;
+  }
+  .footer__bottom {
+    .social {
+      justify-content: flex-start;
+    }
+  }
   .form-group {
     input {
       border-radius: 5px !important;
