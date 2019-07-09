@@ -6,6 +6,16 @@
   color: #666;
 }
 
+input {
+  height: 62px;
+  border: none;
+  padding: 12px 28px;
+
+  &::placeholder {
+    color: #8995af;
+  }
+}
+
 ::selection {
   background-color: $accent;
   color: #fff;
@@ -1145,6 +1155,28 @@ h4 {
 }
 .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
   display: none !important;
+}
+
+.modal {
+  border-radius: 7px;
+  &__title {
+    text-align: center;
+    font-family: "raleway-bold";
+    font-size: 24px;
+    line-height: 32px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    input {
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+      border-radius: 3px;
+      border: none;
+      margin-bottom: 16px;
+      height: 40px;
+      padding: 12px 16px;
+    }
+  }
 }
 
 @import "media"; // Always at the end

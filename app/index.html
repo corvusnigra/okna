@@ -43,9 +43,9 @@
 					</li>
 					<li><a href='#'>Комплектующие</a>
 						<ul class="submenu">
-								<li><a href="#">Сроки производства</a></li>
-								<li><a href="#">Сертификаты</a></li>
-							</ul>
+							<li><a href="#">Сроки производства</a></li>
+							<li><a href="#">Сертификаты</a></li>
+						</ul>
 					</li>
 					<li><a href='#'>Услуги и сервис</a></li>
 					<li><a href='#'>Акции и цены</a></li>
@@ -84,7 +84,7 @@
 						<span class="header__hours">Ежедневно с 9:00 до 18:00</span>
 					</div>
 					<div class="col d-flex justify-content-end align-items-center">
-						<button data-fancybox data-src="#hidden" class="btn-main">Вызвать замерщика</button>
+						<button data-fancybox data-src="#call-measurer" class="btn-main">Вызвать замерщика</button>
 					</div>
 				</div>
 			</div>
@@ -351,7 +351,7 @@
 			<div class="row">
 				<div class="col-md-6">
 					<a href="">
-							<div class="categories__item"
+						<div class="categories__item"
 							style="background:url(img/window-2.png) bottom right no-repeat, linear-gradient(128.17deg, #48CBF4 0%, #7473FD 98.91%), #48CBF4">
 							<div class="categories__title">
 								Окна под ключ
@@ -781,7 +781,7 @@
 					ул. Ялтинская, 24
 				</div>
 				<div class="submit__btn-wrapper">
-					<button class="submit__btn">Оставить заявку</button>
+					<button class="submit__btn" data-fancybox data-src="#get-consultation">Оставить заявку</button>
 				</div>
 
 			</div>
@@ -869,7 +869,7 @@
 							Евпатория, ул. Ялтинская, 25
 						</div>
 						<div class="social">
-							<a href="https://www.facebook.com/" target="_blank"><img src="img/facebook-icon.svg"></a> 
+							<a href="https://www.facebook.com/" target="_blank"><img src="img/facebook-icon.svg"></a>
 							<a href="https://www.instagram.com/" target="_blank"><img src="img/instagram-icon.svg"></a>
 							<a href="https://vk.com/" target="_blank"><img src="img/vk-icon.svg"></a>
 						</div>
@@ -879,7 +879,24 @@
 		</div>
 
 	</footer>
-	<div id="hidden" style="display: none">dfsfdsfsdf</div>
+	<div class="modal" id="call-measurer" style="display: none">
+		<p class="modal__title">Вызвать замерщика</p>
+		<form>
+			<input type="text" placeholder="Ваше имя">
+			<input type="text" placeholder="Телфон">
+			<input type="text" placeholder="E-mail">
+			<button class="btn-main">Отправить</button>
+		</form>
+	</div>
+	<div class="modal" id="get-consultation" style="display: none">
+		<p class="modal__title">Получить консультацию</p>
+		<form>
+			<input type="text" placeholder="Ваше имя">
+			<input type="text" placeholder="Телфон">
+			<input type="text" placeholder="E-mail">
+			<button class="btn-main">Отправить</button>
+		</form>
+	</div>
 
 	<script src="js/scripts.min.js"></script>
 	<link rel='stylesheet prefetch' href='libs/fancybox/jquery.fancybox.min.css'>
