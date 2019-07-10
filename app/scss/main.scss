@@ -54,6 +54,7 @@ body {
     width: 100%;
   }
 }
+
 a:hover {
   text-decoration: none;
 }
@@ -141,6 +142,7 @@ h4 {
 
   &__calc-btn {
     background: #E7EAEF;
+
     &:hover {
       background: #CAD0DC;
     }
@@ -364,6 +366,7 @@ h4 {
 
   &>li {
     position: relative;
+
     &:hover {
       .submenu {
         visibility: visible;
@@ -395,7 +398,23 @@ h4 {
           display: inline-block;
           padding: 12px 20px;
           color: #1F242F;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            height: 40px;
+            width: 4px;
+            left: 0;
+            top: 0;
+            background: #48cbf4;
+            opacity: 0;
+          }
+
           &:hover {
+            &::after {
+              opacity: 1;
+              transition: .3s;
+            }
             text-decoration: none;
             color: #8A4AE7;
             transition: .3s;
@@ -451,6 +470,7 @@ h4 {
 
     &>li {
       position: relative;
+
       &::after {
         content: "";
         position: absolute;
@@ -487,6 +507,23 @@ h4 {
             white-space: nowrap;
             display: inline-block;
             padding: 12px 20px;
+            position: relative;
+            &:hover {
+              &::after {
+                opacity: 1;
+                transition: .3s;
+              }
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              height: 40px;
+              width: 4px;
+              left: 0;
+              top: 0;
+              background: #48cbf4;
+              opacity: 0;
+            }
           }
         }
       }
@@ -610,7 +647,7 @@ h4 {
 }
 
 .tabs-product {
-  padding: 86px 0 0 0;
+  padding: 86px 0 80px 0;
 
   .tab-title {
     display: flex;
@@ -898,7 +935,7 @@ h4 {
 .categories {
   padding-bottom: 80px;
   border-bottom: 1px solid rgba(137, 149, 175, .2);
- 
+
 
   &__item {
     padding: 30px;
@@ -913,7 +950,7 @@ h4 {
     line-height: 40px;
     color: #FFFFFF;
     width: 50%;
-   
+
   }
 }
 
@@ -1153,21 +1190,46 @@ h4 {
     }
   }
 }
-.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+
+.owl-carousel .owl-dots.disabled,
+.owl-carousel .owl-nav.disabled {
   display: none !important;
 }
 
 .modal {
   border-radius: 7px;
+  padding: 56px 48px;
+
   &__title {
     text-align: center;
     font-family: "raleway-bold";
     font-size: 24px;
     line-height: 32px;
+    padding-bottom: 32px;
   }
+
+  &__agreement {
+    font-size: 14px;
+    line-height: 100%;
+    color: rgba(31, 36, 47, .5);
+    padding: 16px 0 8px 0;
+  }
+
+  a {
+    font-size: 14px;
+    line-height: 100%;
+    color: #8A4AE7;
+    text-align: center;
+    padding-bottom: 24px;
+    &:hover {
+      color: #8A4AE7;
+    }
+  }
+
   form {
     display: flex;
     flex-direction: column;
+
     input {
       box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
       border-radius: 3px;

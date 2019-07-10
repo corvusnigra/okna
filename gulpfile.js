@@ -67,14 +67,10 @@ gulp.task('rsync', function() {
 	return gulp.src('app/**')
 	.pipe(rsync({
 		root: 'app/',
-		hostname: 'http://avdanij1.beget.tech/',
-		destination: 'okna-garant/public_html/assets',
+		hostname: 'avdanij1@avdanij1.beget.tech/',
+		destination: '/okna-garant/public_html/assets',
 		// include: ['*.htaccess'], // Includes files to deploy
 		exclude: ['**/Thumbs.db', '**/*.DS_Store'], // Excludes files from deploy
-		recursive: true,
-		archive: true,
-		silent: false,
-		compress: true
 	}))
 });
 
