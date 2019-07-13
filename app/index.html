@@ -28,6 +28,18 @@
 
 <body>
 
+	<!-- * * * * * * Preloader * * * * * * -->
+<div id="preloader">
+		<div class="table">
+			<div class="table-cell">
+				<div class="load8">
+					<div class="loader">Loading...</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- * * * * * * Preloader: end * * * * * * -->
+
 	<!-- Custom HTML -->
 
 	<div class="header">
@@ -37,7 +49,7 @@
 					<li><a href='#'>Окна и двери</a></li>
 					<li class='active'><a href='#'>Балконы</a>
 						<ul class="submenu">
-							<li><a href="#">Сроки производства</a></li>
+							<li class='active'><a href="#">Сроки производства</a></li>
 							<li><a href="#">Сертификаты</a></li>
 						</ul>
 					</li>
@@ -50,7 +62,7 @@
 					<li><a href='#'>Услуги и сервис</a></li>
 					<li><a href='#'>Акции и цены</a></li>
 					<li><a href='#'>Наши работы</a></li>
-					<li class="header__calc-btn"><a href='#'><img src="img/calc-icon.svg"> Калькулятор</a>
+					<li><a data-calc href='#'>Калькулятор</a>
 					</li>
 				</ul>
 			</nav>
@@ -62,7 +74,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-2 header__logo">
-						<img src="/img/Logo.svg" alt="Окна Гарант"><span>Окна Гарант</span>
+						<a href="#"><img src="/img/Logo.svg" alt="Окна Гарант"><span>Окна Гарант</span></a>
+						
 					</div>
 					<div class="col">
 						<span class="header__desc">Продажа и установка пластиковых окон в Крыму</span>
@@ -80,7 +93,7 @@
 						</ul>
 					</div>
 					<div class="col d-flex flex-column justify-content-center align-items-center">
-						<span class="header__phone">+7 978 951 56 32</span>
+						<span class="header__phone"> <a href="tel:+7 978 951 56 32">+7 978 951 56 32</a></span>
 						<span class="header__hours">Ежедневно с 9:00 до 18:00</span>
 					</div>
 					<div class="col d-flex justify-content-end align-items-center">
