@@ -16,6 +16,7 @@ $(function () {
 	$('.slider__wrapper .owl-carousel').owlCarousel({
 		loop: true,
 		margin: 10,
+		autoplay:true,
 		nav: true,
 		dots: true,
 		items: 1,
@@ -127,5 +128,28 @@ $(function () {
 			
 		}
 	}); 
+
+
+	$(".mobile-menu__items ul > li > img").click(function() {
+		var checkElement = $(this).next();
+	  
+		$(".mobile-menu__items li").removeClass("active");
+		$(this).closest("li").addClass("active");
+	  
+		if (checkElement.is("ul") && checkElement.is(":visible")) {
+		  $(this).closest("li").removeClass("active");
+		  checkElement.slideUp("normal");
+		}
+		if (checkElement.is("ul") && !checkElement.is(":visible")) {
+		  $(".mobile-menu__items ul ul:visible").slideUp("normal");
+		  checkElement.slideDown("normal");
+		}
+	  
+		if ($(this).closest("li").find("ul").children().length == 0) {
+		  return true;
+		} else {
+		  return false;
+		}
+	  });
 
 });

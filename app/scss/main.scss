@@ -248,6 +248,35 @@ h3 {
               background: linear-gradient(80.69deg, #f7cd9c 6.35%, rgba(180, 136, 247, 0) 94.3%);
             }
 
+            &.custom p {
+              width: 34%;
+              left: 8%;
+              font-size: 20px;
+              line-height: 28px;
+              text-align: left;
+              color: #fff;
+            }
+
+            p {
+              position: absolute;
+              top: 67%;
+              width: 100%;
+              text-align: center;
+              font-size: 24px;
+              line-height: 28px;
+            }
+
+            &.custom h4{
+              color: #1F242F;
+              width: 70%;
+              white-space: normal;
+              left: 43%;
+              top: 34%;
+              text-transform: initial;
+              -webkit-text-fill-color: black;
+              background: none;
+            }
+
             h4 {
               position: absolute;
               top: 50%;
@@ -476,9 +505,13 @@ h3 {
   font-size: 24px;
   line-height: 32px;
   padding: 5px 15px;
-  background: #48cbf4;
+  background: #F15DA2;
   border-radius: 6px;
   color: #fff;
+}
+.item.custom .stock{
+  top: 16%;
+  left: 13%;
 }
 
 .top-menu {
@@ -645,9 +678,28 @@ h3 {
       padding: 0;
       list-style-type: none;
 
+      ul {
+        display: none;
+        li {
+          border: none
+        }
+      }
+
+      .submenu {
+       
+      }
+
       li {
         padding: 16px 24px;
         border-bottom: 1px solid rgba(137, 149, 175, 0.2);
+        position: relative;
+        &>img {
+          position: absolute;
+          right: 43px;
+          top: 11px;
+          border: 11px solid transparent;
+          cursor: pointer;
+        }
 
         a {
           font-size: 16px;
