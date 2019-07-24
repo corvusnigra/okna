@@ -1,5 +1,9 @@
 
-
+// ============= PRELOADER SCRIPT ===================
+$(window).on("load", function (e) {
+	$('#preloader').addClass('hid'); 
+})
+// ============= END PRELOADER SCRIPT ===================
 
 $(function () {
 	$("[data-fancybox]").fancybox();
@@ -7,11 +11,8 @@ $(function () {
 
 $(function () {
 	
-	// ============= PRELOADER SCRIPT ===================
-	$(window).on("load", function (e) {
-		$('#preloader').addClass('hid'); 
-	})
-    // ============= END PRELOADER SCRIPT ===================
+
+	$('.phone').mask('(999) 999-99-99');
 
 	$('.slider__wrapper .owl-carousel').owlCarousel({
 		loop: true,

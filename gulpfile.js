@@ -47,6 +47,7 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/dist/owl.carousel.js',
+		'app/libs/jquery.maskedinput.js',
 		'app/js/common.js', // Always at the end
 		'app/libs/fancybox/jquery.fancybox.min.js'
 		])
